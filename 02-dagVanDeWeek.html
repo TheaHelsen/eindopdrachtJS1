@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eindopdracht : dag van de week</title>
+</head>
+<body>
+	<script type="text/javascript">
+		"use strict";
+
+		let dagBenamingen = new Array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag");
+
+		let nu = new Date();
+		let dagtext = dagBenamingen[(nu.getDay())];
+		document.write (`<p> Vandaag is het "${dagtext}".</p>`);
+		if (nu.getDay() == 0 || nu.getDay() == 6){
+			document.write (`<p> Het is weekend, even bekomen. </p>`);
+		}
+		else {
+			document.write(`<p> Het is een werkdag, aan de slag dus. </p>`);
+		}
+	</script>
+</body>
+</html>

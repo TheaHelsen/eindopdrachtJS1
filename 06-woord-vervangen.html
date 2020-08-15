@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eindwerk : woord vervangen</title>
+	<link rel="stylesheet" href="06-woord-vervangen.css">
+</head>
+<body>
+	<h1>Vervang het woord</h1>
+	<p>
+		<label for="zin">Zin: </label>
+	</p>
+	<p>
+		<input type="text" id="zin" class="zin">
+	</p>
+	<p>
+		<label for="woord">Zoek dit woord:</label>
+		<input type="text" id="woord" class="woord">
+	</p>
+	<p>
+		<label for="vervangwoord">Dit woord komt in de plaats:</label>
+		<input type="text" id="vervangwoord" class="woord">
+	</p>
+	<p>
+		<input type="button" value="Vervang" onclick="Verzend()">
+	</p>
+	<p>
+		De nieuwe zin:
+	</p>
+	<p>
+		<span class="zin" id="vervangzin"></span>
+	</p>
+
+
+
+	<script type="text/javascript" src="06-woord-vervangen.js">
+	</script>
+
+</body>
+</html>
